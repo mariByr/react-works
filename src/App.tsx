@@ -1,30 +1,29 @@
 
-import './App.css'
+// import './App.css'
+//
+//
+// const coursesTitleArray: string[] = [
+//   'JavaScript Complex',
+//   'Java Complex',
+//   'Python Complex',
+//   'QA Complex',
+//   'Fullstack',
+//   'Frontend'
+// ];
 
-
-const coursesTitleArray: string[] = [
-  'JavaScript Complex',
-  'Java Complex',
-  'Python Complex',
-  'QA Complex',
-  'Fullstack',
-  'Frontend'
-];
+import {CoursesComponent} from "./components/courses-component/СoursesComponent.tsx";
 
 function App() {
 
 
   return (
     <>
-<ul>
-  {
-    coursesTitleArray.map((value,index) => <li key={index}>{value}</li>)
-  }
-</ul>
-
-
+<CoursesComponent/>
     </>
   )
 }
 
 export default App
+//coursesModel
+//CoursesComponent
+//CourseComponent
