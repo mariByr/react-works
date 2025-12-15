@@ -1,29 +1,12 @@
 
-// import './App.css'
-//
-//
-// const coursesTitleArray: string[] = [
-//   'JavaScript Complex',
-//   'Java Complex',
-//   'Python Complex',
-//   'QA Complex',
-//   'Fullstack',
-//   'Frontend'
-// ];
+import {FamilyComponent} from "./components/FamilyComponent/FamilyComponent.tsx";
 
-import {CoursesComponent} from "./components/courses-component/СoursesComponent.tsx";
+const App = () => {
+    return (
+        <div>
+           <FamilyComponent/>
+        </div>
+    );
+};
 
-function App() {
-
-
-  return (
-    <>
-<CoursesComponent/>
-    </>
-  )
-}
-
-export default App
-//coursesModel
-//CoursesComponent
-//CourseComponent
+export default App;
