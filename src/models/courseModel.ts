@@ -1,4 +1,4 @@
-export interface CourseModel {
+export interface ICourseModel {
     title: string,
     monthDuration: number,
     // course?: boolean

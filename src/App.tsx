@@ -1,12 +1,12 @@
+import {ListComponent} from "./components/CoursesComponent/ListComponent.tsx";
 
-import {FamilyComponent} from "./components/FamilyComponent/FamilyComponent.tsx";
 
-const App = () => {
-    return (
+function App() {
+       return (
         <div>
-           <FamilyComponent/>
+            <ListComponent/>
         </div>
     );
-};
+}
 
 export default App;
