@@ -1,16 +1,10 @@
-
-import './App.css'
-
-function App() {
+import {ListPostesComponent} from "./components/listPostesComponent/ListPostesComponent.tsx";
 
 
-  return (
-    <>
-
-
-
-    </>
-  )
+export default function App(){
+    return (
+        <div>
+            <ListPostesComponent/>
+        </div>
+    );
 }
-
-export default App
