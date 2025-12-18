@@ -71,3 +71,16 @@ export default defineConfig([
   },
 ])
 ```
+#ohm4AivCEBv
+
+https://jsonplaceholder.typicode.com/todos – тут масив даних. Ознайомтесь з ним для початку
+
+Створити компонент TodoComponent, який буде містити інформацію про окремий об’єкт з масиву.
+
+Створити компонент TodoComponents, в якому відбувається ітерація масиву даних, отриманих з апі.
+
+Кореневим компонентом є App
+Зробити service layer -для asyng fetch для отримання даних
+ зробити env для апі
+зробити тип для todo( завдання)
+зробити компоненти TodoComponents іTodoComponent
