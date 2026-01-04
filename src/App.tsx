@@ -1,5 +1,6 @@
 
 import './App.css'
+import {ListPostComponent} from "./components/listPostComponent/ListPostComponent.tsx";
 
 function App() {
 
@@ -7,7 +8,7 @@ function App() {
   return (
 
 <>
-
+  <ListPostComponent/>
 </>
 
 
