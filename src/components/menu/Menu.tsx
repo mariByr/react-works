@@ -1,0 +1,26 @@
+import {Link} from "react-router-dom";
+import './menu.css'
+
+const Menu = () => {
+    return (
+        <ul>
+<li>
+    <Link to={'users/jsonplaceholder'}>users-jsonplaceholder</Link>
+</li>
+            <li>
+                <Link to={'users/dummyjson'}>users-dummyjson</Link>
+            </li>
+            <li>
+                <Link to={'posts/jsonplaceholder'}>posts-jsonplaceholder</Link>
+            </li>
+            <li>
+                <Link to={'posts/dummyjson'}>posts-dummyjson</Link>
+                            </li>
+            <li>
+                <Link to={'comments/dummyjson'}>comments-dummyjson</Link>
+            </li>
+        </ul>
+    );
+};
+
+export default Menu;
