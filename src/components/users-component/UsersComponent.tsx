@@ -12,6 +12,7 @@ export const UsersComponent = () => {
     return (
         <div>
             {users.map((user: IUserModel) => <UserComponent user={user} key={user.id}/>)}
+
         </div>
     );
 };
