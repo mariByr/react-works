@@ -1,4 +1,4 @@
-import PostsJsonplaceholder from "../components/posts-jsonplaceholder/PostsJsonplaceholder.tsx";
+import PostsJsonplaceholder from "../components/components-JsonPlaceholder/posts-jsonplaceholder/PostsJsonplaceholder.tsx";
 
 export const PostJsonPage = () => {
     return (

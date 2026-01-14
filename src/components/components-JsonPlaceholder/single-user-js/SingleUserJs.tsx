@@ -1,4 +1,4 @@
-import type {IUserJson} from "../../models/IUserJson.tsx";
+import type {IUserJson} from "../../../models/models-json/IUserJson.tsx";
 import type {FC} from "react";
 
 interface SingleUserJsProps {

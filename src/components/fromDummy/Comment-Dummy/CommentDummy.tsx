@@ -1,0 +1,14 @@
+import type {IComentsDummy} from "../../../models/models-dummy/IComentsDummy.ts";
+import type {FC} from "react";
+
+interface CommentDummyProps {
+    comment: IComentsDummy
+}
+
+export const CommentDummy:FC<CommentDummyProps> = ({comment}) => {
+    return (
+        <div>
+            <h3>{comment.body}</h3>
+        </div>
+    );
+};

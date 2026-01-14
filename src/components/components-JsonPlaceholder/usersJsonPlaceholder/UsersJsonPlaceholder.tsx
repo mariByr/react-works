@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
-import type {IUserJson} from "../../models/IUserJson.tsx";
-import {getAllFromJson} from "../../services/api.services.tsx";
+import type {IUserJson} from "../../../models/models-json/IUserJson.tsx";
+import {getAllFromJson} from "../../../services/api.services.tsx";
 import {SingleUserJs} from "../single-user-js/SingleUserJs.tsx";
 
 

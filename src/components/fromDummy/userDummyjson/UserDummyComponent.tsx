@@ -1,4 +1,4 @@
-import type {IUsersDummyjson} from "../../models/IUsersDummyjson.tsx";
+import type {IUsersDummyjson} from "../../../models/models-dummy/IUsersDummyjson.tsx";
 import type {FC} from "react";
 
 interface UserDummyComponentProps {

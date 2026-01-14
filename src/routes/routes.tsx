@@ -16,7 +16,7 @@ export const routes=createBrowserRouter([
         {path:'posts/jsonplaceholder',element:<PostJsonPage/>},
         {path:'posts/dummyjson',element:<PostsDummyPage/>},
         {path:'comments/jsonplaceholder',element:<CommentsJsonPage/>},
-        {path:'/comments/dummyjson ',element:<CommentsDummyPage/>}
+        {path:'/comments/dummyjson',element:<CommentsDummyPage/>}
     ]
 }
 ])
