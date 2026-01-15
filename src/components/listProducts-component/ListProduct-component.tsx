@@ -16,7 +16,7 @@ import {ProductComponent} from "../product-component/Product-component.tsx";
      console.log("products state:", products);
 
      return (
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-3 gap-6 border-b border-gray-200">
 
             {
                 products.map((product) => <ProductComponent product={product} key={product.id}/>)
