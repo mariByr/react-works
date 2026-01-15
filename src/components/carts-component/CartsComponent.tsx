@@ -8,15 +8,17 @@ import {CartComponent} from "../user-component/CartComponent.tsx";
 
 
 export const CartsComponent = () => {
-    const {id}=useParams()
-    console.log(id)
+    const { id } = useParams<{ id: string }>();
+    console.log('USER ID FROM URL:', id);
+
 
     const[carts,setCarts]=useState<ICart[]>([])
-    useEffect(() => {
+    useEffect(() => { console.log('STATE carts:', carts);
 
         if(id){
             cartService.getCartsOfUser(+id)
                 .then(({carts}:ICartResponseModel)=> {
+                    console.log('USER ID FROM URL:', id);
 
                     setCarts(carts);
                 });
