@@ -7,7 +7,7 @@ interface CommentDummyProps {
 
 export const CommentDummy:FC<CommentDummyProps> = ({comment}) => {
     return (
-        <div>
+        <div className={'m-4'}>
             <h3>{comment.body}</h3>
         </div>
     );

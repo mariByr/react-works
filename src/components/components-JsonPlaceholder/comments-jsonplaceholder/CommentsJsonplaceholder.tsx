@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import type ICommentjson from "../../../models/models-json/iCommentjson.ts";
 import {getAllFromJson} from "../../../services/api.services.tsx";
-import {CommentJsonComponent} from "../commentJson/CommentJsonComponent.tsx";
+import {CommentJsonComponent} from "../comment-Json/CommentJsonComponent.tsx";
 
 
  export const CommentsJsonplaceholder = () => {

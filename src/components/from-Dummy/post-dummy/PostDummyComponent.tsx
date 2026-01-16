@@ -8,7 +8,7 @@ interface PostDummyComponentProps {
 export const PostDummyComponent: FC < PostDummyComponentProps>= ({post}) => {
 
     return (
-        <div>
+        <div className={'m-4'}>
             <h2>{post.body}</h2>
         </div>
     );

@@ -1,4 +1,5 @@
-ul {
+.menu-main{
     display: flex;
     justify-content: space-between;
+    font-size: 34px;
 }

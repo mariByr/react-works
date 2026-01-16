@@ -7,6 +7,10 @@ interface CommentJsonComponentProps {
 
 export const CommentJsonComponent:FC< CommentJsonComponentProps> = ({comment}) => {
     return (
-        <>{comment.body}</>
+        <div className={'m-10'}>
+
+            <p>Comment.id:{comment.id}{comment.body}</p>
+
+        </div>
     );
 };

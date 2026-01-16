@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import type {IUsersDummyjson} from "../../../models/models-dummy/IUsersDummyjson.tsx";
 import {getAllFromDummy} from "../../../services/api.services.tsx";
 import type{IBaseDummyResponseModel}from "../../../models/models-dummy/IBaseDummyResponseModel.tsx";
-import {UserDummyComponent} from "../userDummyjson/UserDummyComponent.tsx";
+import {UserDummyComponent} from "../user-Dummyjson/UserDummyComponent.tsx";
 
 
 export const UsersDummyjson = () => {

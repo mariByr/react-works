@@ -7,8 +7,8 @@ interface PostComponentProps {
 
 export const PostComponent:FC< PostComponentProps> = ({post}) => {
     return (
-        <>
+        <div className={'p-4 m-4'}>
       <h2>{post.title}</h2>
-        </>
+        </div>
     );
 };

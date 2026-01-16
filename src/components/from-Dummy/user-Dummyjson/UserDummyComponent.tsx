@@ -7,8 +7,8 @@ interface UserDummyComponentProps {
 
 export const UserDummyComponent:FC<UserDummyComponentProps> = ({user} ) => {
     return (
-        <>
+        <div className={'m-5'}>
             <h2>{user.firstName}</h2>
-        </>
+        </div>
     );
 };

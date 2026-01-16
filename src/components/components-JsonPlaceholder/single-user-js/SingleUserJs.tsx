@@ -7,8 +7,8 @@ interface SingleUserJsProps {
 
 export const SingleUserJs:FC <SingleUserJsProps> = ({user}) => {
     return (
-        <>
+        <div className={'border border-gray-500 p-4 my-5'}>
             <h2>{user.name}</h2>
-        </>
+        </div>
     );
 };

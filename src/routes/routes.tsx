@@ -1,22 +1,34 @@
 import {createBrowserRouter} from "react-router-dom";
 import App from "../App.tsx";
-
-import {CommentsDummyPage} from "../pages/CommentsDummyPage.tsx";
 import {UserJspPage} from "../pages/UserJspPage.tsx";
 import {UserDummyPage} from "../pages/UserDummyPage.tsx";
 import {PostJsonPage} from "../pages/PostJsonPage.tsx";
 import {PostsDummyPage} from "../pages/PostsDummyPage.tsx";
 import {CommentsJsonPage} from "../pages/CommentsJsonPage.tsx";
+import {CommentsDummyPage} from "../pages/CommentsDummyPage.tsx";
+import {UsersLayout} from "../layuots/UsersLayout.tsx";
+import {PostLayout} from "../layuots/PostLayout.tsx";
+import {CommentsLayout} from "../layuots/CommentsLayout.tsx";
+
+
 
 export const routes=createBrowserRouter([
-    {
-    path:"/",element:<App/>,children :[
-        {path:'users/jsonplaceholder',element:<UserJspPage/>},
-        {path:'users/dummyjson',element:<UserDummyPage/>},
-        {path:'posts/jsonplaceholder',element:<PostJsonPage/>},
-        {path:'posts/dummyjson',element:<PostsDummyPage/>},
-        {path:'comments/jsonplaceholder',element:<CommentsJsonPage/>},
-        {path:'/comments/dummyjson',element:<CommentsDummyPage/>}
-    ]
-}
-])
+        {path:"/",element:<App/>},
+        {path:'users',element:<UsersLayout/>,children:[
+            {path:'jsonplaceholder',element:<UserJspPage/>},
+                {path:'dummyjson',element:<UserDummyPage/>}
+            ]},
+        {path:'posts',element:<PostLayout/>,children:[
+            {path:'jsonplaceholder',element:<PostJsonPage/>},
+                {path:'dummyjson',element:<PostsDummyPage/>}
+            ]},
+            {
+                path: 'comments', element: <CommentsLayout/>, children: [
+                    {path: 'jsonplaceholder', element: <CommentsJsonPage/>},
+                    {path: 'dummyjson', element: <CommentsDummyPage/>}]
+
+
+            }//
+
+]
+)
