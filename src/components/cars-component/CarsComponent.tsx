@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import type {ICar} from "../../models/ICar.ts";
 import {getCars} from "../../servises/api.service.tsx";
 import {CarComponent} from "../car-component/CarComponent.tsx";
+import './carsComponent-style.css'
 
 
 

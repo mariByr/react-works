@@ -1,0 +1,25 @@
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-car{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-car input{
+    width:200px;
+    padding: 10px;
+
+}
+
+.form-car button{
+    width: 200px;
+    background-color: lightgrey;
+}
+
+.errors-method{
+    color: red;
+}
