@@ -11,21 +11,22 @@ export const CreateCarPage = () => {console.log('car')
     return (
         <>
             <form className={'form-car'} onSubmit={handleSubmit(createHendler)}>
-                <div>
-                    <label htmlFor="brand">enter brand</label>
-                <input id={'brand'} type="text" {...register('brand')}/>
-                    <div>{errors.brand?.message}</div>
+                <div className={'form-group'}>
+                    <label htmlFor="brand"> brand</label>
+                <input id={'brand'} type="text" placeholder={'enter brand'} {...register('brand')}/>
+                    <div className='errors-method'>{errors.brand?.message}</div>
                 </div>
-                <div>
-                    <input type="number"{...register('price')}/>
-                    <div>{errors.price?.message}</div>
+                <div className={'form-group'}>
+                    <label htmlFor="{'price'}">Price</label>
+                    <input id={'price'} type="number" placeholder={'Enter price'} {...register('price')}/>
+                    <div className='errors-method'>{errors.price?.message}</div>
                 </div>
-                <div>
-                    <input type="number"{...register('year')}/>
-                    <div>{errors.year?.message}</div>
+                <div className={'form-group'}>
+                    <label htmlFor="{'year'}">Year</label>
+                    <input id={'year'} type="number" placeholder={'Enter year'} {...register('year')}/>
+                    <div  className="errors-method">{errors.year?.message}</div>
                 </div>
-                <button type="submit">Save</button>
-
+            <button type="submit">Save</button>
             </form>
         </>
     );

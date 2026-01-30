@@ -7,11 +7,11 @@ interface CarComponentProps {
 
 export const CarComponent:FC<CarComponentProps> = ({car:{id,brand,price,year}} ) => {
     return (
-        <div>
-           <p>{id}</p>
-           <p>{brand}</p>
-            <p>{price}</p>
-            <p>{year}</p>
+        <div className={'car'}>
+           <p>Id:{id}</p>
+           <p>Brand: {brand}</p>
+            <p>price: {price}</p>
+            <p>year: {year}</p>
         </div>
     );
 };

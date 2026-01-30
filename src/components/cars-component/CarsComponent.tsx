@@ -13,7 +13,7 @@ export const CarsComponent = () => {
             },
     [])
     return (
-        <div>
+        <div className={'div-cars'}>
             {
             cars.map((car, index) => <CarComponent key={index} car={car} />)
             }
