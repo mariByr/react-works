@@ -1,14 +1,13 @@
 import {createSlice} from "@reduxjs/toolkit";
 import type {IUser} from "../../models/IUser.ts";
-type UserSliceType={
+type UserSliceType = {
     users:IUser[],
 }
 
-const initUserSliseState:UserSliceType={users:[]
-
-}
+const initUserSliceState:UserSliceType={users:[]}
  export const userSlice= createSlice({
     name:'userSlice',
-    initialState:initUserSliseState,
-    reducers:{}
+    initialState:initUserSliceState,
+    reducers:{},
+     extraReducers:builder => builder,
 })
