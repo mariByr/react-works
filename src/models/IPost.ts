@@ -1,5 +1,6 @@
-export interface IPost{
-    id: number;
-    title: string;
-    body: string;
+export default interface IPost {
+   userId: number;
+   id: number;
+   title: string;
+   body: string;
 }

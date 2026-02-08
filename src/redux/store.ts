@@ -12,6 +12,7 @@ export const store=configureStore({
     }
 })
 //cтворюємо хуки з типізацією
+//withTypes прикріплює тип
 export const useAppDispatch=useDispatch.withTypes<typeof store.dispatch>();
 
 export const useAppSelector=useSelector.withTypes<ReturnType<typeof store.getState>>();
