@@ -3,9 +3,11 @@ import type {IUser} from "../../models/IUser.ts";
 import {getAll} from "../../services/api.services.ts";
 type UserSliceType = {
     users:IUser[],
+
 }
 
-const initUserSliceState:UserSliceType={users:[]}
+const initUserSliceState:UserSliceType={users:[]
+    }
 
 const loadUsers=createAsyncThunk('loadUsers',async (_,thunkAPI) => {
     const users=await getAll<IUser[]>('/users');
@@ -25,5 +27,6 @@ const loadUsers=createAsyncThunk('loadUsers',async (_,thunkAPI) => {
 
 export const userActions = {
     ...userSlice.actions,
-    loadUsers
+    loadUsers,
+
 }
