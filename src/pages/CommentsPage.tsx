@@ -1,9 +1,9 @@
-import {CommentComponent} from "../components/commentComponent/CommentComponent.tsx";
+import {CommentsComponent} from "../components/commentsComponent/CommentsComponent.tsx";
 
 export const CommentsPage = () => {
     return (
         <>
-        <CommentComponent/>
+        <CommentsComponent/>
         </>
     );
 };

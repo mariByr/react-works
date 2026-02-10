@@ -1,19 +1,14 @@
-import {useAppDispatch, useAppSelector} from "../../redux/store.ts";
-import {useEffect} from "react";
-import {commentActions} from "../../redux/slices/CommentSlice.ts";
 import type {IComment} from "../../models/IComment.ts";
+import type {FC} from "react";
 
-export const CommentComponent = () => {
-    const dispatch = useAppDispatch();
-    const comments = useAppSelector(state=> state.commentStoreSlice.comments);
-    useEffect(() => {
-        dispatch(commentActions.loadComments())
-    }, []);
+interface CommentComponentProps {
+    comment: IComment
+}
+
+export const CommentComponent:FC< CommentComponentProps> = ({comment}) => {
     return (
-        <div>
-            {
-                comments.map((comment: IComment) => (<div key={comment.id}>{comment.body}</div>))
-            }
-        </div>
+        <>
+            <p>{comment.body}</p>
+        </>
     );
 };

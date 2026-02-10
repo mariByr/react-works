@@ -3,7 +3,6 @@ import type {IUser} from "../../models/IUser.ts";
 import {getAll} from "../../services/api.services.ts";
 type UserSliceType = {
     users:IUser[],
-
 }
 
 const initUserSliceState:UserSliceType={users:[]
